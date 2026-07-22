@@ -13,7 +13,7 @@ import { profile } from "@/data/profile";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sudeepanoble.github.io"),
-  title: profile.seo.title,
+  title: "Sudeepa's About",
   description: profile.seo.description,
   alternates: {
     canonical: "/",

@@ -3,7 +3,7 @@ import { SiteShell } from "@/components/site-shell";
 import { WritingSection } from "@/components/writing-section";
 
 export const metadata: Metadata = {
-  title: "Thoughts — Sudeepa Kolli",
+  title: "Sudeepa's Thoughts",
   description:
     "Notes on life, work, ideas, graduate school, and places where Sudeepa Kolli has been featured.",
   alternates: { canonical: "/writing/" },
