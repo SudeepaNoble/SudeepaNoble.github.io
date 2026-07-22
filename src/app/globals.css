@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-fraunces: "Fraunces Variable", Georgia, serif;
+  --font-inter: "Inter Variable", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  @apply bg-paper text-ink dark:bg-dusk dark:text-bone;
+  @apply antialiased;
+  overflow-x: hidden;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+::selection {
+  @apply bg-accent/20 text-ink dark:bg-accent-dark/30 dark:text-bone;
+}
+
+/* Visible keyboard focus ring everywhere, mouse users unaffected */
+:focus-visible {
+  outline: 2px solid theme("colors.accent.DEFAULT");
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.dark :focus-visible {
+  outline-color: theme("colors.accent.dark");
+}
+
+@layer utilities {
+  .container-content {
+    @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-12;
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.3s ease;
+  }
+
+  .link-underline:hover,
+  .link-underline:focus-visible {
+    background-size: 100% 1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

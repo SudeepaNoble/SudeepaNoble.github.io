@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5B4B95"/>
+      <stop offset="100%" stop-color="#1B1812"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g1)"/>
+  <g stroke="#F3EFE6" stroke-width="2" fill="none" opacity="0.55">
+    <path d="M60 250 C 160 120, 260 380, 360 250 S 560 120, 660 250" />
+    <circle cx="60" cy="250" r="6" fill="#E0A458" stroke="none"/>
+    <circle cx="360" cy="250" r="6" fill="#E0A458" stroke="none"/>
+    <circle cx="660" cy="250" r="6" fill="#E0A458" stroke="none"/>
+  </g>
+  <text x="60" y="420" font-family="Georgia, serif" font-size="42" fill="#F3EFE6">SEWNA</text>
+  <text x="60" y="455" font-family="monospace" font-size="16" letter-spacing="2" fill="#E0A458">PLACEHOLDER PREVIEW</text>
+</svg>

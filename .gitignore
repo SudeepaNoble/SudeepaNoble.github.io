@@ -1,0 +1,10 @@
+node_modules
+node_modules-stale-*
+.next
+.next-stale-*
+out
+.vercel
+*.log
+.env*.local
+.DS_Store
+tsconfig.tsbuildinfo
