@@ -39,10 +39,17 @@ export function Hero() {
               className="text-sm leading-relaxed text-ink-soft dark:text-bone-soft"
             />
           ))}
+          {profile.proofLine ? (
+            <AnimatedParagraph
+              text={profile.proofLine}
+              delay={0.2}
+              className="text-sm leading-relaxed text-ink-soft dark:text-bone-soft"
+            />
+          ) : null}
           <AnimatedParagraph
-            text={profile.proofLine}
-            delay={0.2}
-            className="text-sm leading-relaxed text-ink-soft dark:text-bone-soft"
+            text={profile.question}
+            delay={0.23}
+            className="text-sm italic leading-relaxed text-ink-soft dark:text-bone-soft"
           />
           <AnimatedParagraph
             text={profile.asideLine}
