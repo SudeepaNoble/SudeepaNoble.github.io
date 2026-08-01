@@ -28,7 +28,7 @@ export function WritingSection() {
           description="Grad school guides, short reflections, and a few places where my work or story has been featured."
         />
 
-        <div className="flex flex-col gap-14">
+        <div className="flex flex-col gap-16">
           {sectionOrder.map((section) => {
             const entries = writing.filter((entry) => entry.section === section);
 
