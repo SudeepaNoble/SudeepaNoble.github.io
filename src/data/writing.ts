@@ -24,6 +24,9 @@ export type WritingEntry = {
   date: string; // ISO date, e.g. "2026-03-14"
   externalUrl: string;
   readingTime?: string; // e.g. "6 min read"
+  xImpressions?: number[];
+  mediumImpressions?: string;
+  impressionsSummary?: string;
 };
 
 export const writing: WritingEntry[] = [
@@ -38,6 +41,9 @@ export const writing: WritingEntry[] = [
     externalUrl:
       "https://medium.com/@sudeepa-kolli/study-abroad-loans-101-f4d03ed50614?sharedUserId=sudeepa-kolli",
     readingTime: "3 min read",
+    mediumImpressions: "504",
+    xImpressions: [2190, 44571],
+    impressionsSummary: "47,265 impressions over Medium + X",
   },
   {
     slug: "choosing-the-right-masters-program",
@@ -50,6 +56,9 @@ export const writing: WritingEntry[] = [
     externalUrl:
       "https://medium.com/@sudeepa-kolli/a-guide-to-choosing-the-right-program-and-university-for-your-masters-degree-c00143dc1ced?sharedUserId=sudeepa-kolli",
     readingTime: "5 min read",
+    mediumImpressions: "Unavailable",
+    xImpressions: [4726, 17729],
+    impressionsSummary: "22,455 impressions over X · Medium unavailable",
   },
   {
     slug: "statement-of-purpose-for-grad-school",
@@ -62,6 +71,9 @@ export const writing: WritingEntry[] = [
     externalUrl:
       "https://medium.com/@sudeepa-kolli/statement-of-purpose-for-grad-school-438e5e147e0b?sharedUserId=sudeepa-kolli",
     readingTime: "4 min read",
+    mediumImpressions: "2.8K",
+    xImpressions: [2387],
+    impressionsSummary: "5,187 impressions over Medium + X",
   },
   {
     slug: "crafting-the-ideal-grad-school-resume",
@@ -74,6 +86,9 @@ export const writing: WritingEntry[] = [
     externalUrl:
       "https://medium.com/@sudeepa-kolli/crafting-the-ideal-grad-school-resume-e603bcdccf81?sharedUserId=sudeepa-kolli",
     readingTime: "4 min read",
+    mediumImpressions: "701",
+    xImpressions: [1210, 10149],
+    impressionsSummary: "12,060 impressions over Medium + X",
   },
   {
     slug: "navigating-the-journey-to-grad-school",
@@ -86,6 +101,9 @@ export const writing: WritingEntry[] = [
     externalUrl:
       "https://medium.com/@sudeepa-kolli/navigating-the-journey-to-grad-school-a-comprehensive-guide-4209b9e68a23?sharedUserId=sudeepa-kolli",
     readingTime: "8 min read",
+    mediumImpressions: "2.4K",
+    xImpressions: [10034],
+    impressionsSummary: "12,434 impressions over Medium + X",
   },
   {
     slug: "x-thread-2014568664910201092",
@@ -97,6 +115,8 @@ export const writing: WritingEntry[] = [
     date: "2026-01-23",
     externalUrl: "https://x.com/i_sudeepa/status/2014568664910201092?s=20",
     readingTime: "2 min read",
+    xImpressions: [104080],
+    impressionsSummary: "104,080 impressions over X",
   },
   {
     slug: "x-thread-2015265792422736209",
@@ -108,6 +128,8 @@ export const writing: WritingEntry[] = [
     date: "2026-01-25",
     externalUrl: "https://x.com/i_sudeepa/status/2015265792422736209?s=20",
     readingTime: "2 min read",
+    xImpressions: [11518],
+    impressionsSummary: "11,518 impressions over X",
   },
   {
     slug: "clear-switches-prevent-burnout",
@@ -119,6 +141,8 @@ export const writing: WritingEntry[] = [
     date: "2026-01-26",
     externalUrl: "https://x.com/i_sudeepa/status/2015668517522300974?s=20",
     readingTime: "3 min read",
+    xImpressions: [35401],
+    impressionsSummary: "35,401 impressions over X",
   },
   {
     slug: "creativity-is-not-a-luxury",
@@ -130,6 +154,8 @@ export const writing: WritingEntry[] = [
     date: "2026-03-08",
     externalUrl: "https://x.com/i_sudeepa/status/2030480867139998085?s=20",
     readingTime: "3 min read",
+    xImpressions: [2312],
+    impressionsSummary: "2,312 impressions over X",
   },
   {
     slug: "the-ken-study-abroad-gurus",
