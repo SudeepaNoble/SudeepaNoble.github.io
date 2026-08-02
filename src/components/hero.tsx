@@ -25,7 +25,7 @@ export function Hero() {
           initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.08 }}
-          className="max-w-4xl text-fluid-hero font-display font-medium leading-[1.05] text-ink dark:text-bone"
+          className="max-w-4xl text-[2.05rem] font-display font-medium leading-[1.05] text-ink dark:text-bone sm:text-fluid-hero"
         >
           {profile.greeting}
         </motion.h1>
@@ -46,23 +46,13 @@ export function Hero() {
               className="text-sm leading-relaxed text-ink-soft dark:text-bone-soft"
             />
           ) : null}
-          <AnimatedParagraph
-            text={profile.question}
-            delay={0.23}
-            className="text-sm italic leading-relaxed text-ink-soft dark:text-bone-soft"
-          />
-          <AnimatedParagraph
-            text={profile.asideLine}
-            delay={0.25}
-            className="text-sm leading-relaxed text-ink-soft dark:text-bone-soft"
-          />
         </div>
 
         <motion.div
           initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.35 }}
-          className="flex flex-col gap-6"
+          className="flex flex-col gap-6 pt-1 sm:pt-2"
         >
           {profile.ctaLine ? (
             <p className="max-w-2xl text-sm font-medium text-ink dark:text-bone">
