@@ -1,7 +1,6 @@
-# Sudeepa Kolli — Portfolio
+# Sudeepa Kolli - Portfolio
 
-A personal portfolio site for Sudeepa Kolli — AI product manager, strategist,
-and builder — built with Next.js (App Router), TypeScript, Tailwind CSS, and
+A personal portfolio site for Sudeepa Kolli, built with Next.js (App Router), TypeScript, Tailwind CSS, and
 Motion for React. Design and content are original; layout rhythm and
 motion language are inspired by mohitsingh.cloud (see
 `docs/implementation-plan.md` for the full breakdown of what was recreated
