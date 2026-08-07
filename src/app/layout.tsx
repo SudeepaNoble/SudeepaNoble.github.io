@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: profile.name,
-    images: [{ url: "/icon.png", width: 936, height: 952, alt: "Lotus illustration" }],
+    images: [{ url: "/icon.png", width: 1254, height: 1254, alt: "Purple scalloped flower illustration" }],
   },
   twitter: {
     card: "summary_large_image",
