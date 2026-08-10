@@ -46,6 +46,19 @@ export function Hero() {
               className="text-sm leading-relaxed text-ink-soft dark:text-bone-soft"
             />
           ) : null}
+          <motion.p
+            initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10% 0px" }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            className="text-sm leading-relaxed text-ink-soft dark:text-bone-soft"
+          >
+            {profile.codexUsage.prefix}
+            <span className="font-medium text-accent dark:text-accent-dark">
+              {profile.codexUsage.tokens}
+            </span>
+            {profile.codexUsage.suffix}
+          </motion.p>
         </div>
 
         <motion.div

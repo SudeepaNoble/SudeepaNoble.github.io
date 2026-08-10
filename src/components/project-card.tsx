@@ -45,7 +45,7 @@ export function ProjectCard({
                 onClick={() => setExpanded((v) => !v)}
                 aria-expanded={expanded}
                 aria-controls={detailsId}
-                className="font-display text-left text-lg font-medium text-ink transition-transform duration-300 hover:-translate-y-0.5 hover:text-accent dark:text-bone dark:hover:text-accent-dark sm:text-xl"
+                className={`text-left text-lg font-medium text-ink transition-transform duration-300 hover:-translate-y-0.5 hover:text-accent dark:text-bone dark:hover:text-accent-dark sm:text-xl ${project.slug === "mulam" ? "font-sans" : "font-display"}`}
               >
                 {project.title}
               </button>
@@ -60,6 +60,12 @@ export function ProjectCard({
               >
                 View Project ↗
               </a>
+            ) : project.actionLabel ? (
+              <span
+                className={`inline-flex min-h-9 shrink-0 items-center font-mono text-sm font-medium ${accentStyles[project.accent]}`}
+              >
+                {project.actionLabel}
+              </span>
             ) : null}
           </div>
 
@@ -86,6 +92,11 @@ export function ProjectCard({
                       {paragraph}
                     </p>
                   ))}
+                  {project.statusNote ? (
+                    <p className="pt-2 text-xs font-medium text-emerald-700 dark:text-emerald-400">
+                      {project.statusNote}
+                    </p>
+                  ) : null}
                 </div>
               </motion.div>
             ) : null}
