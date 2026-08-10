@@ -45,7 +45,7 @@ export function ProjectCard({
                 onClick={() => setExpanded((v) => !v)}
                 aria-expanded={expanded}
                 aria-controls={detailsId}
-                className="font-display text-left text-lg font-medium text-ink transition-transform duration-300 hover:-translate-y-0.5 hover:text-accent dark:text-bone dark:hover:text-accent-dark sm:text-xl"
+                className={`text-left text-lg font-medium text-ink transition-transform duration-300 hover:-translate-y-0.5 hover:text-accent dark:text-bone dark:hover:text-accent-dark sm:text-xl ${project.slug === "mulam" ? "font-sans" : "font-display"}`}
               >
                 {project.title}
               </button>
