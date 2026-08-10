@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: profile.name,
-    images: [{ url: "/icon.png", width: 1254, height: 1254, alt: "Purple scalloped flower illustration" }],
+    images: [{ url: "/icon.png", width: 512, height: 512, alt: "Sudeepa Kolli portrait" }],
   },
   twitter: {
     card: "summary_large_image",
