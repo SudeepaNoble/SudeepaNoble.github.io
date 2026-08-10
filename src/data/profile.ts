@@ -13,6 +13,12 @@ export const profile = {
     "I build enterprise software for government agencies across the United States, with a growing interest in AI products and developer tooling.",
   ],
 
+  codexUsage: {
+    prefix: "As per Codex, I've used ",
+    tokens: "1.4B tokens",
+    suffix: " lately · Aug 9, 2026.",
+  },
+
   philosophyQuote:
     "How much of who we become is shaped by what we choose to explore",
 

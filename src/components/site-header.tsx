@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container } from "@/components/container";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { profile } from "@/data/profile";
 
 const navItems = [
   { label: "About", href: "/" },
@@ -18,14 +17,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-line/70 bg-paper/80 backdrop-blur-md dark:border-line-dark/70 dark:bg-dusk/80">
       <Container className="flex h-16 items-center justify-between sm:h-20">
-        <Link
-          href="/"
-          className="font-display text-lg font-medium tracking-tight text-ink dark:text-bone"
-        >
-          {profile.shortName}
-        </Link>
-
-        <nav className="flex items-center gap-3 sm:gap-8">
+        <nav className="flex min-w-0 items-center gap-3 sm:gap-8">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
 
@@ -46,7 +38,7 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="ml-auto flex items-center gap-2 pl-4 sm:gap-3 sm:pl-8">
           <ThemeToggle />
         </div>
       </Container>

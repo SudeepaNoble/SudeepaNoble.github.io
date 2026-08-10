@@ -60,6 +60,12 @@ export function ProjectCard({
               >
                 View Project ↗
               </a>
+            ) : project.actionLabel ? (
+              <span
+                className={`inline-flex min-h-9 shrink-0 items-center font-mono text-sm font-medium ${accentStyles[project.accent]}`}
+              >
+                {project.actionLabel}
+              </span>
             ) : null}
           </div>
 
@@ -86,6 +92,11 @@ export function ProjectCard({
                       {paragraph}
                     </p>
                   ))}
+                  {project.statusNote ? (
+                    <p className="pt-2 text-xs font-medium text-emerald-700 dark:text-emerald-400">
+                      {project.statusNote}
+                    </p>
+                  ) : null}
                 </div>
               </motion.div>
             ) : null}

@@ -19,6 +19,8 @@ export type Project = {
   featured?: boolean;
   liveUrl?: string;
   githubUrl?: string;
+  statusNote?: string;
+  actionLabel?: string;
 };
 
 export const projects: Project[] = [
@@ -28,7 +30,7 @@ export const projects: Project[] = [
     shortDescription:
       "A custom fashion product I built from the ground up, combining customer insight, product thinking, and execution across development, go-to-market, and operations.",
     longDescription:
-      "SEWNA started as a problem I wanted to solve for myself: making custom Indian clothing easier to discover, order, and experience.\n\nI researched the market, validated the idea with customers and designers, and designed the product around what people value most throughout the custom clothing journey.\n\nAs a solo founder, I lead product strategy, user research, design, development, go-to-market, customer acquisition, designer partnerships, operations, fulfillment, marketing, and growth.\n\nI'm currently building the SEWNA customer mobile app in Flutter.",
+      "SEWNA started as a problem I wanted to solve for myself: making custom Indian clothing easier to discover, order, and experience.\n\nI researched the market, validated the idea with customers and designers, and designed the product around what people value most throughout the custom clothing journey.\n\nAs a solo founder, I lead product strategy, user research, design, development, go-to-market, customer acquisition, designer partnerships, operations, fulfillment, marketing, and growth.",
     category: "Personal",
     status: "Live",
     date: "10/16/2023",
@@ -38,6 +40,7 @@ export const projects: Project[] = [
     featured: true,
     liveUrl: "https://www.joinsewna.com/",
     githubUrl: undefined,
+    statusNote: "Currently building SEWNA mobile app → App Store soon",
   },
   {
     slug: "before-you-buy",
@@ -56,20 +59,18 @@ export const projects: Project[] = [
     githubUrl: undefined,
   },
   {
-    slug: "mangoverse",
-    title: "Mangoverse",
+    slug: "mulam",
+    title: "Mūlam (Personal Writing Assistant)",
     shortDescription:
-      "An interactive Flutter web application that turns mangoes into characters, stories, and personalities.",
+      "A personal writing assistant that learns how I naturally write from my own tweets, articles, and past writing, then helps turn rough thoughts, notes into tweets and long form writing in my voice.",
     longDescription:
-      "Built for my little cousin, who absolutely loves mangoes, and as my first opportunity to learn Flutter. Mangoverse is an interactive web application that turns mangoes into fictional characters, stories, and personalities through a museum-inspired digital experience. I led the product vision, UX design, Flutter development, SEO optimization, and production deployment.",
+      "A personal writing assistant that learns how I naturally write from my own tweets, articles, and past writing, then helps turn rough thoughts, notes into tweets and long form writing in my voice.\n\nBuilt around a personal voice model, source aware idea extraction, originality safeguards, and feedback from my edits so the writing gets closer to how I actually communicate over time.",
     category: "Personal",
-    status: "Live",
-    date: "03/06/2026",
-    image: "/projects/placeholder-mangoverse.svg",
-    tags: ["Flutter Web", "Playful Internet Project"],
-    accent: "mango",
-    liveUrl: "https://mangoverse-two.vercel.app/",
-    githubUrl: undefined,
+    status: "Building",
+    image: "/projects/placeholder-immigrantos.svg",
+    tags: ["Personal Writing", "Local-First", "Open Source"],
+    accent: "violet",
+    actionLabel: "Coming Soon",
   },
   {
     slug: "colink",
