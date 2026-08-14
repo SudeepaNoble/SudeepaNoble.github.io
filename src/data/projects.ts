@@ -60,7 +60,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mulam",
-    title: "Mūlam (Personal Writing Assistant)",
+    title: "Mūlam",
     shortDescription:
       "A personal writing assistant that learns how I naturally write from my own tweets, articles, and past writing, then helps turn rough thoughts, notes into tweets and long form writing in my voice.",
     longDescription:
