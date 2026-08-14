@@ -2,6 +2,7 @@ import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/section-heading";
 import { ProjectCard } from "@/components/project-card";
 import { projects, type ProjectCategory } from "@/data/projects";
+import { profile } from "@/data/profile";
 
 const projectCategories: ProjectCategory[] = ["Personal", "Academic"];
 
@@ -14,6 +15,14 @@ export function ProjectsSection() {
           title="Building what I wish existed"
           description="Products inspired by real problems, shaped through research, and built from idea to launch"
         />
+
+        <p className="-mt-6 text-sm leading-relaxed text-ink-soft dark:text-bone-soft sm:-mt-8">
+          {profile.codexUsage.prefix}
+          <span className="font-medium text-accent dark:text-accent-dark">
+            {profile.codexUsage.tokens}
+          </span>
+          {profile.codexUsage.suffix}
+        </p>
 
         <div className="flex flex-col gap-14">
           {projectCategories.map((category) => {
