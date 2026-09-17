@@ -4,13 +4,14 @@ import { motion, useReducedMotion } from "motion/react";
 import type { ReactNode } from "react";
 
 /** Splits `text` on {{highlighted}} markers into plain/emphasis segments. */
-function splitSegments(text: string): { content: string; emphasis: boolean }[] {
-  const parts = text.split(/(\{\{[^}]+\}\})/g).filter(Boolean);
+function splitSegments(text: string): { content: string; emphasis: boolean; bold: boolean }[] {
+  const parts = text.split(/(\{\{[^}]+\}\}|\[\[[^\]]+\]\])/g).filter(Boolean);
   return parts.map((part) => {
     const match = part.match(/^\{\{(.+)\}\}$/);
-    return match
-      ? { content: match[1], emphasis: true }
-      : { content: part, emphasis: false };
+    const boldMatch = part.match(/^\[\[(.+)\]\]$/);
+    if (match) return { content: match[1], emphasis: true, bold: false };
+    if (boldMatch) return { content: boldMatch[1], emphasis: false, bold: true };
+    return { content: part, emphasis: false, bold: false };
   });
 }
 
@@ -58,6 +59,10 @@ export function AnimatedParagraph({
       {segments.map((segment, i) =>
         segment.emphasis ? (
           <Highlight key={i}>{segment.content}</Highlight>
+        ) : segment.bold ? (
+          <strong key={i} className="font-semibold text-ink dark:text-bone">
+            {segment.content}
+          </strong>
         ) : (
           <span key={i}>{segment.content}</span>
         )
