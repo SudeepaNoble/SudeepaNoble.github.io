@@ -158,6 +158,18 @@ export const writing: WritingEntry[] = [
     impressionsSummary: "2,312 impressions over X",
   },
   {
+    slug: "cna-india-brain-drain",
+    title: "India’s brain drain easing? Why more tech workers are coming home",
+    shortDescription:
+      "Featured by Channel News Asia in a story about Indian tech workers returning home, immigration uncertainty, and the opportunities and challenges they encounter.",
+    section: "Featured Mentions",
+    category: "Featured",
+    date: "2026-09-18",
+    externalUrl:
+      "https://www.channelnewsasia.com/asia/india-brain-drain-tech-workers-coming-home-6391866",
+    readingTime: "6 min read",
+  },
+  {
     slug: "the-ken-study-abroad-gurus",
     title: "Move Over Finfluencers, the Study Abroad Gurus Are Here",
     shortDescription:
