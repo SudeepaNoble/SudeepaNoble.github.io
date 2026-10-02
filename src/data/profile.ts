@@ -16,8 +16,8 @@ export const profile = {
 
   codexUsage: {
     prefix: "As per Codex, I've used ",
-    tokens: "1.4B tokens",
-    suffix: " lately · Aug 9, 2026.",
+    tokens: "1.6B tokens",
+    suffix: " lately · Oct 2, 2026.",
   },
 
   philosophyQuote:
