@@ -56,9 +56,8 @@ export const writing: WritingEntry[] = [
     externalUrl:
       "https://medium.com/@sudeepa-kolli/a-guide-to-choosing-the-right-program-and-university-for-your-masters-degree-c00143dc1ced?sharedUserId=sudeepa-kolli",
     readingTime: "5 min read",
-    mediumImpressions: "Unavailable",
     xImpressions: [4726, 17729],
-    impressionsSummary: "22,455 impressions over X · Medium unavailable",
+    impressionsSummary: "22,455 impressions over Medium + X",
   },
   {
     slug: "statement-of-purpose-for-grad-school",
@@ -119,6 +118,18 @@ export const writing: WritingEntry[] = [
     impressionsSummary: "104,080 impressions over X",
   },
   {
+    slug: "thinking-about-moving-back-to-india",
+    title: "Thinking About Moving Back to India? Here’s What I’d Consider Before Doing It.",
+    shortDescription:
+      "An X article on comparing the lives you could build in India and the U.S., from work and daily routines to relationships and personal freedom.",
+    section: "Life, Work & Ideas",
+    category: "Life",
+    date: "2026-09-23",
+    externalUrl: "https://x.com/i_sudeepa/status/2102774861135483047?s=20",
+    xImpressions: [72441],
+    impressionsSummary: "72,441 impressions over X",
+  },
+  {
     slug: "x-thread-2015265792422736209",
     title: "Discipline for People Who Hate Routines",
     shortDescription:
@@ -159,7 +170,7 @@ export const writing: WritingEntry[] = [
   },
   {
     slug: "cna-india-brain-drain",
-    title: "India’s brain drain easing? Why more tech workers are coming home",
+    title: "India’s Brain Drain Easing? Why More Tech Workers Are Coming Home",
     shortDescription:
       "Featured by Channel News Asia in a story about Indian tech workers returning home, immigration uncertainty, and the opportunities and challenges they encounter.",
     section: "Featured Mentions",
@@ -195,7 +206,7 @@ export const writing: WritingEntry[] = [
   },
   {
     slug: "ndtv-american-dream-quote",
-    title: "Was It The Right Choice? The American Dream, Now a Nightmare for Many",
+    title: "Was It the Right Choice? The American Dream, Now a Nightmare for Many",
     shortDescription:
       "Quoted by NDTV Opinion on the risks and tradeoffs of moving to the US for a master's degree.",
     section: "Featured Mentions",
