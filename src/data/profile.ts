@@ -10,8 +10,7 @@ export const profile = {
   // The main hero paragraph. {{highlight}} markers are rendered with
   // emphasis by the AnimatedText component — see src/components/animated-text.tsx
   heroParagraph: [
-    "I previously built enterprise software for government agencies across the United States, working across engineering, product, and client problems.",
-    "[[I'm open to collaborations, freelance projects, and interesting problems I can help solve.]]",
+    "I build software and products, working across engineering, product strategy, and customer problems. Previously, I built enterprise software for government agencies across the United States.",
   ],
 
   codexUsage: {
