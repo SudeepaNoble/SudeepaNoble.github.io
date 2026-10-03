@@ -62,15 +62,15 @@ export const projects: Project[] = [
     slug: "mulam",
     title: "Mūlam",
     shortDescription:
-      "A personal writing assistant that learns how I naturally write from my own tweets, articles, and past writing, then helps turn rough thoughts, notes into tweets and long form writing in my voice.",
+      "A personal writing system that learns how you already write, then helps turn your thoughts, notes, and reading into writing that still sounds like you.",
     longDescription:
-      "A personal writing assistant that learns how I naturally write from my own tweets, articles, and past writing, then helps turn rough thoughts, notes into tweets and long form writing in my voice.\n\nBuilt around a personal voice model, source aware idea extraction, originality safeguards, and feedback from my edits so the writing gets closer to how I actually communicate over time.",
+      "Mūlam combines a personal writing fingerprint, source-aware idea extraction, originality safeguards, and feedback from your edits. The more you use it, the better it understands your voice without flattening it into generic AI language.",
     category: "Personal",
     status: "Building",
     image: "/projects/placeholder-immigrantos.svg",
-    tags: ["Personal Writing", "Local-First", "Open Source"],
+    tags: ["Personal Voice", "Local First", "Open Source"],
     accent: "violet",
-    actionLabel: "Coming Soon",
+    actionLabel: "In Progress",
   },
   {
     slug: "colink",
