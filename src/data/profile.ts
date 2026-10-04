@@ -11,6 +11,7 @@ export const profile = {
   // emphasis by the AnimatedText component — see src/components/animated-text.tsx
   heroParagraph: [
     "I build software and products, working across engineering, product strategy, and customer problems. Previously, I built enterprise software for government agencies across the United States.",
+    "[[I'm open to collaborations, freelance projects, and interesting problems I can help solve.]]",
   ],
 
   codexUsage: {
