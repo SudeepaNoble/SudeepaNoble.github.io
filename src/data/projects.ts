@@ -30,17 +30,16 @@ export const projects: Project[] = [
     shortDescription:
       "A custom fashion product I built from the ground up, combining customer insight, product thinking, and execution across development, go-to-market, and operations.",
     longDescription:
-      "SEWNA started as a problem I wanted to solve for myself: making custom Indian clothing easier to discover, order, and experience.\n\nI researched the market, validated the idea with customers and designers, and designed the product around what people value most throughout the custom clothing journey.\n\nAs a solo founder, I lead product strategy, user research, design, development, go-to-market, customer acquisition, designer partnerships, operations, fulfillment, marketing, and growth.",
+      "SEWNA started as a problem I wanted to solve for myself: making custom Indian clothing easier to discover, order, and experience.\n\nI researched the market, validated the idea with customers and designers, and designed the product around what people value most throughout the custom clothing journey.\n\nAs a solo founder, I led product strategy, user research, design, development, go-to-market, customer acquisition, designer partnerships, operations, fulfillment, marketing, and growth. I also built a mobile app for SEWNA.",
     category: "Personal",
-    status: "Live",
+    status: "Archived",
     date: "10/16/2023",
     image: "/projects/placeholder-sewna.svg",
     tags: ["Solo Founder", "End-to-End Product", "Go-to-Market", "Flutter"],
     accent: "green",
     featured: true,
-    liveUrl: "https://www.joinsewna.com/",
+    actionLabel: "No longer live",
     githubUrl: undefined,
-    statusNote: "Currently building SEWNA mobile app → App Store soon",
   },
   {
     slug: "before-you-buy",
